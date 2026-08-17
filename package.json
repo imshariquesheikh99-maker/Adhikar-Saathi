@@ -1,0 +1,16 @@
+{
+  "name": "adhikaar-saathi-capstone",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Privacy-first domestic violence support MVP for India, built as an MCA capstone.",
+  "workspaces": [
+    "apps/mobile",
+    "services/api"
+  ],
+  "scripts": {
+    "mobile": "npm run start -w apps/mobile",
+    "api": "npm run dev -w services/api",
+    "typecheck": "npm run typecheck -w apps/mobile && npm run typecheck -w services/api",
+    "lint": "npm run lint -w apps/mobile && npm run lint -w services/api"
+  }
+}
